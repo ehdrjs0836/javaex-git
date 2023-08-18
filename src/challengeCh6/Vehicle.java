@@ -1,4 +1,4 @@
-package challengeCh06;
+package challengeCh6;
 
 public class Vehicle {
   String color;

@@ -19,8 +19,9 @@ public class PersonComparetest {
     for (Person person:persons) {
       System.out.println(person);
     }
+    //Arrays.sort(persons); //오름차순
+    Arrays.sort(persons, Comparator.reverseOrder()); //내림차순
     System.out.println("정렬후");
-    Arrays.sort(persons, Comparator.reverseOrder());
     for (Person person:persons) {
       System.out.println(person);
     }
@@ -41,8 +42,8 @@ class Person implements Comparable<Person>{
 
   @Override
   public int compareTo(Person person) {
-//    return person.age - this.age;
-    return this.age - person.age;
+    return this.age - person.age; //오름차순
+//    return person.age - this.age; //내림차순
   }
 
   @Override
